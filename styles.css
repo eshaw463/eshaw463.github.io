@@ -1,0 +1,197 @@
+body {
+    background-color: #1E2681;
+}
+h1 {
+    color: rgb(255, 255, 255);
+}
+p {
+    color: rgb(255, 255, 255);
+}
+
+#nameCard {
+  font-size: 70pt;
+  font-family: "Sofia", sans-serif;
+}
+
+
+
+#leftGif {
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    width: 400px;
+}
+#rightGif {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    width: 300px;
+}
+
+#leftGif2 {
+    position: absolute;
+    bottom: -15%;
+    width: 100%;
+    z-index: -1;
+}
+#rightGif2 {
+    position: absolute;
+    right: 20px;
+    top: 400px;
+    width: 300px;
+}
+
+
+#l1 {
+    /* position: absolute; */
+    right: 550px;
+
+    top: 250px;
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+
+    border-color: black;
+    background-color:  beige;
+    color: rgb(0, 0, 0);
+    font-family: "Sofia", sans-serif;
+    border: solid black;
+
+    font-size: large;
+
+}
+#l2 {
+    /* position: absolute; */
+    right: 550px;
+
+    top: 300px;
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+
+    border-color: black;
+    background-color: #f7cd44;
+    color: black;
+    border: solid black;
+    font-family: "Sofia", sans-serif;
+
+    font-size: large;
+}
+#l3 {
+    /* position: absolute; */
+    right: 550px;
+
+    top: 350px;
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+
+    border-color: black;
+    background-color: beige;
+    color: rgb(0, 0, 0);
+    border: solid black;
+    font-family: "Sofia", sans-serif;
+
+    font-size: large;
+}
+#l4 {
+    /* position: absolute; */
+    right: 550px;
+
+    top: 400px;
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+
+    border-color: black;
+    background-color: #f7cd44;
+    color: rgb(0, 0, 0);
+    font-family: "Sofia", sans-serif;
+    border: solid black;
+
+    font-size: large;
+}
+
+#l5 {
+    /* position: absolute; */
+    right: 550px;
+
+    top: 450px;
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+
+    border-color: black;
+    background-color: beige;
+    color: black;
+    font-family: "Sofia", sans-serif;
+    border: solid black;
+
+    font-size: large;
+}
+
+
+#l1:hover{
+    color: beige;
+    background-color: black;
+    border: solid beige;
+}
+#l2:hover{
+    color: #f7cd44;
+    background-color: black;
+    border: solid #f7cd44;
+}
+#l3:hover{
+    color: beige;
+    background-color: black;
+    border: solid beige;
+}
+#l4:hover{
+    color: #f7cd44;
+    background-color: black;
+    border: solid #f7cd44;
+}
+
+#l5:hover{
+    color: beige;
+    background-color: black;
+    border: solid beige;
+}
+
+.icon {
+    /* display: flex;
+    justify-content: center; */
+
+    /* position: relative; */
+    width: 37px;
+    height: 37px;
+    padding: 6.5px;
+
+    top: -35px;
+
+    left: 570px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    padding: 0 20vw;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.icons, .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+ 
+ .buttons {
+    gap: 10px;
+ }
+
+ .cent{
+    display: flex;
+    justify-content: center;
+ }
