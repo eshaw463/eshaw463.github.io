@@ -11,23 +11,80 @@
 
 <body>
     
-    
+    <img src="../aavvaa.gif" id = "leftGif2">
+    <img src="../star-12515_256.gif" id = "leftGif">
+
     <!-- img src = "logo.png" width="100" -->
+
     <div class = "cent">
         <h1 id = "nameCard" >Photo Gallery</h1>
+        <span id = "randy" onclick="randomizeOrder()">randomize</span>
     </div>
     <!-- img id = "pro" src = "pro.png" width="100" -->
 
-    <img src="../aavvaa.gif" id = "leftGif2">
 
-    <!--  Buttons  -->
-    <div class="container">
-
+    <div class="full-img" id = "fullImgBox">
+        <img src="gallery/20210801_095559.jpg" id = "fullImg">
+        <span onclick="closeFullImg()">:3</span>
     </div>
 
-<!-- about, projects, blog-->
+    <div class="img-gallery" id = "gallery">
+        <!--<img src ="gallery/20210801_095559.jpg" onclick="openFullImg(this.src)">
+        <img src ="gallery/20210801_111326.jpg" onclick="openFullImg(this.src)">
+        <img src ="gallery/20210802_150104.jpg" onclick="openFullImg(this.src)">
+        <img src ="gallery/20210803_094020.jpg" onclick="openFullImg(this.src)">
+        <img src ="gallery/20210805_110508.jpg" onclick="openFullImg(this.src)">
+        <img src ="gallery/20210805_143310.jpg" onclick="openFullImg(this.src)">-->
+    </div>
+
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+        function openFullImg(pic){
+            fullImgBox.style.display = "flex"
+            fullImg.src = pic;
+        }
+
+        function closeFullImg(){
+            fullImgBox.style.display = "none"
+        }
 
 
+    </script>
 
+    <!-- Warning: vibe code below-->
+    <script>
+    const GALLERY_PATH = 'gallery/';
+    const MAX_IMAGES = 15;
+    let imageList = [];
+
+    async function loadImageList() {
+        const res = await fetch('images.json');
+        imageList = await res.json();
+        displayRandomImages();
+    }
+
+    function displayRandomImages() {
+        const gallery = document.getElementById('gallery');
+        gallery.innerHTML = '';
+
+        const shuffled = [...imageList].sort(() => 0.5 - Math.random());
+        const selected = shuffled.slice(0, MAX_IMAGES);
+
+        selected.forEach(img => {
+            const el = document.createElement('img');
+            el.src = GALLERY_PATH + img;
+            el.onclick = () => openFullImg(el.src);
+            gallery.appendChild(el);
+        });
+    }
+
+    function randomizeOrder() {
+        displayRandomImages();
+    }
+
+    loadImageList(); // Initial load
+    </script>
 
 </body>

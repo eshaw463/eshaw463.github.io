@@ -29,8 +29,9 @@ p {
 }
 
 #leftGif2 {
-    position: absolute;
+   position: fixed;
     bottom: -15%;
+    left: 0%;
     width: 100%;
     z-index: -1;
 }
