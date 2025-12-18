@@ -17,9 +17,9 @@ p {
 
 #leftGif {
     position: absolute;
-    left: 20px;
-    top: 30px;
-    width: 400px;
+    left: 25px;
+    top: 20px;
+    width: 320px;
 }
 #rightGif {
     position: absolute;
