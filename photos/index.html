@@ -48,9 +48,14 @@
             fullImgBox.style.display = "none"
         }
 
-        
+        // close image by clicking off or esc
         fullImg.addEventListener("click", function(event) {
-        event.stopPropagation();
+            event.stopPropagation();
+        });
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "Escape") {
+                closeFullImg();
+            }
         });
 
     </script>
