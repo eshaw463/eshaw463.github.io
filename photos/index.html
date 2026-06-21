@@ -22,9 +22,8 @@
     <!-- img id = "pro" src = "pro.png" width="100" -->
 
 
-    <div class="full-img" id = "fullImgBox">
+    <div class="full-img" id = "fullImgBox" onclick="closeFullImg()">
         <img src="gallery/20210801_095559.jpg" id = "fullImg">
-        <span onclick="closeFullImg()">:3</span>
     </div>
 
     <div class="img-gallery" id = "gallery">
@@ -49,6 +48,10 @@
             fullImgBox.style.display = "none"
         }
 
+        
+        fullImg.addEventListener("click", function(event) {
+        event.stopPropagation();
+});
 
     </script>
 
