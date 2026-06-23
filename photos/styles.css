@@ -258,41 +258,35 @@ p {
     justify-content: center;
  }
 
-/*top nav */
-.topnav {
-  background-color: #000000;
-  overflow: hidden;
-  margin: -8px -8px 0 -8px; /*done to accomodate for margin being default 8px for body*/
 
-  display: flex;
-  justify-content: center; /* centers links horizontally */
-  align-items: center;
 
-  /*height: 60px;*/
-  background-color: black;
-  position: absolute;
-  top: 10px;
-  width: 200vh;
+/* Bottom-left navigation */
+.corner-nav {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+
+    z-index: 1000;
 }
 
-/* style */
-.topnav a {
-  color: #e70548;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+.corner-icon {
+    width: 32px;
+    height: 32px;
 
-  padding: 14px 20px;
-  margin: 4px 12px;
+    padding: 6px;
+    border-radius: 10px;
 
-  border-radius: 10px;
-
-  font-family: "Sofia", cursive;;
+    background: rgba(0, 0, 0, 0.75);
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #e70548;
-  color: black;
+.corner-icon:hover {
+
+    background: rgba(231, 5, 73, 0);
+    border-color: #e70548;
+
+    box-shadow: 0 0 12px #e70548;
 }
