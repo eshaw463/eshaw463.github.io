@@ -196,3 +196,69 @@ p {
     display: flex;
     justify-content: center;
  }
+
+
+.button-footer {
+    position: relative;
+    bottom: -20vh;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.button-container img {
+    width: 88px;
+    height: 31px;
+
+    transition: transform 0.2s ease;
+}
+
+.button-container img:hover {
+    transform: scale(1.3);
+}
+
+
+/*top nav */
+.topnav {
+  background-color: #000000;
+  overflow: hidden;
+  margin: -8px -8px 0 -8px; /*done to accomodate for margin being default 8px for body*/
+
+  display: flex;
+  justify-content: center; /* centers links horizontally */
+  align-items: center;
+
+  /*height: 60px;*/
+  background-color: black;
+  position: absolute;
+  top: 10px;
+  width: 200vh;
+}
+
+/* style */
+.topnav a {
+  color: #e70548;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+  padding: 14px 20px;
+  margin: 4px 12px;
+
+  border-radius: 10px;
+
+  font-family: "Sofia", cursive;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #e70548;
+  color: black;
+}

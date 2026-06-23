@@ -203,27 +203,41 @@ p {
     justify-content: center;
  }
 
-  #homebtn{ /*recolor to match each page, add to every page*/
-    position: absolute;
+/*top nav */
+.topnav {
+  background-color: #000000;
+  overflow: hidden;
+  margin: -8px -8px 0 -8px; /*done to accomodate for margin being default 8px for body*/
 
-    bottom: 20px;
-    left: 20px; 
-    width: 100px;
-    height: 40px;
-    border-radius: 8px;
+  display: flex;
+  justify-content: center; /* centers links horizontally */
+  align-items: center;
 
-    border-color: #e70548;
-    background-color:  rgb(0, 0, 0);
-    color: #e70548;
-    font-family: "Sofia", sans-serif;
-    border: solid #e70548;
+  /*height: 60px;*/
+  background-color: black;
+  position: absolute;
+  top: 10px;
+  width: 200vh;
+}
 
-    font-size: large;
+/* style */
+.topnav a {
+  color: #e70548;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 
- }
+  padding: 14px 20px;
+  margin: 4px 12px;
 
- #homebtn:hover{
-    color: rgb(0, 0, 0);
-    background-color: #e70548;
-    border: solid rgb(0, 0, 0);
+  border-radius: 10px;
+
+  font-family: "Sofia", cursive;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #e70548;
+  color: black;
 }
