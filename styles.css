@@ -196,28 +196,3 @@ p {
     display: flex;
     justify-content: center;
  }
-
- #homebtn{ /*recolor to match each page, add to every page*/
-    position: absolute;
-
-    bottom: 20px;
-    left: 20px; 
-    width: 100px;
-    height: 40px;
-    border-radius: 8px;
-
-    border-color: #e70548;
-    background-color:  rgb(0, 0, 0);
-    color: #e70548;
-    font-family: "Sofia", sans-serif;
-    border: solid #e70548;
-
-    font-size: large;
-
- }
-
- #homebtn:hover{
-    color: rgb(0, 0, 0);
-    background-color: #e70548;
-    border: solid rgb(0, 0, 0);
-}
